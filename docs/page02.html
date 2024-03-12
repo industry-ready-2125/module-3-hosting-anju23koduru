@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterForm</title>
+    <style>
+       body{
+        width: 100vw;
+        height: 100vh;
+        display:grid;
+        place-items: center;
+        background-image: url('https://images.pexels.com/photos/13499007/pexels-photo-13499007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        margin:10px 10px;
+        padding:30px 20px;
+       }
+       .form-container{
+        color:aliceblue;
+        width:300px;
+        background-color: rgb(124, 115, 115);
+        display:flex;
+        flex-direction: column;
+        margin:5px;
+        padding:30px 20px;
+        gap:20px;
+        text-align: center;
+        border: 10px;
+       }
+       .terms{
+         display:flex;
+         justify-content: center;
+         gap:5px;
+         align-items: center;
+       }
+       input{
+        padding:10px 10px;
+        margin:10px;
+        border-radius: 10px;
+        border:none;
+        outline:none;
+       }
+       button{
+        padding:8px;
+        border-radius: 8px;
+        border:none;
+        font-weight:500px;
+        background-color: blue;
+        cursor:pointer;
+        font-size: 15px;   
+       }
+       button:active{
+        background-color: rgb(45,241,215);
+       }
+    </style>
+    <a href="newscover.html"></a>
+    <a href="LoginForm.html"></a>
+</head>
+<body>
+    <form class="form-container">
+    <h2>Register Form</h2>
+    <div class="name">
+        <input type="text" placeholder="name" required>
+        <input type="text" placeholder="E-mail" required>
+        <input type="text" placeholder="password" required>
+        
+    </div>
+    <div class="terms">
+        <input type="checkbox" />I  accept <a href="">Terms of use</a>
+    </div>
+    <button>Register Now</button>
+</form>
+</body>
+</html>
